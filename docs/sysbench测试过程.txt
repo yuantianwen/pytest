@@ -5,7 +5,7 @@ sysbench /root/sysbench/src/lua/oltp_read_write.lua --mysql-host=10.60.0.13 --my
 sysbench /root/sysbench/src/lua/oltp_read_write.lua --mysql-host=10.60.0.13 --mysql-port=3306 --mysql-db=test --mysql-user=root --mysql-password=root --table_size=10000000 --tables=10 --threads=16 --time=60 --report-interval=10 --db-driver=mysql run
 
 
-# git 工具使用，袁天文
+# git 工具使用，袁天文,ytw
 $ git remote add origin https://github.com/yuantianwen/pytest.git
 
 Administrator@AN4WFEN0KENJY3J MINGW64 /i/workspace/python/pytest (master)
