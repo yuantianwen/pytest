@@ -58,5 +58,32 @@ Master_SSL_Verify_Server_Cert: No
 
 
 
+from time import sleep
+N=12
+for i in range(N):
+   sleep(0.5)
+   print(f"{i/N*100:.1f} %",end="\r")
 
- 
+
+print("111","\r")
+
+
+Notes
+Note that you canNOT create an actual new terminal session windows from curses. curses.newwin() “new window” is inside the “screen”, which is your existing Terminal.
+
+ Tags: python
+
+ Categories: python
+
+ Updated: July 19, 2018
+
+SHARE ON
+ Twitter  Facebook  Google+  LinkedIn PreviousNext
+LEAVE A COMMENT
+FOLLOW:  FEED
+© 2018 Michael Hirsch, Ph.D.. Powered by Jekyll & Minimal Mistakes.
+聆听翻译
+
+
+
+

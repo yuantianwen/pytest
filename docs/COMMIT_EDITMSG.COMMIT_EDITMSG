@@ -1,20 +1,37 @@
-新增
+信则
 
 # --------------
 # Please enter the commit message for your changes. Everything below
 # this paragraph is ignored, and an empty message aborts the commit.
 # Just close the window to accept your message.
-diff --git "a/docs/sysbench\346\265\213\350\257\225\350\277\207\347\250\213.txt" "b/docs/sysbench\346\265\213\350\257\225\350\277\207\347\250\213.txt"
-index 652744d..d5f8daf 100644
---- "a/docs/sysbench\346\265\213\350\257\225\350\277\207\347\250\213.txt"
-+++ "b/docs/sysbench\346\265\213\350\257\225\350\277\207\347\250\213.txt"
-@@ -5,7 +5,9 @@ sysbench /root/sysbench/src/lua/oltp_read_write.lua --mysql-host=10.60.0.13 --my
- sysbench /root/sysbench/src/lua/oltp_read_write.lua --mysql-host=10.60.0.13 --mysql-port=3306 --mysql-db=test --mysql-user=root --mysql-password=root --table_size=10000000 --tables=10 --threads=16 --time=60 --report-interval=10 --db-driver=mysql run
- 
- 
-+# git 工具使用
- $ git remote add origin https://github.com/yuantianwen/pytest.git
- 
- Administrator@AN4WFEN0KENJY3J MINGW64 /i/workspace/python/pytest (master)
- $ git push -u origin master
+diff --git a/docs/COMMIT_EDITMSG.COMMIT_EDITMSG b/docs/COMMIT_EDITMSG.COMMIT_EDITMSG
+new file mode 100644
+index 0000000..9babc4e
+--- /dev/null
++++ b/docs/COMMIT_EDITMSG.COMMIT_EDITMSG
+@@ -0,0 +1,20 @@
++新增
 +
++# --------------
++# Please enter the commit message for your changes. Everything below
++# this paragraph is ignored, and an empty message aborts the commit.
++# Just close the window to accept your message.
++diff --git "a/docs/sysbench\346\265\213\350\257\225\350\277\207\347\250\213.txt" "b/docs/sysbench\346\265\213\350\257\225\350\277\207\347\250\213.txt"
++index 652744d..d5f8daf 100644
++--- "a/docs/sysbench\346\265\213\350\257\225\350\277\207\347\250\213.txt"
+++++ "b/docs/sysbench\346\265\213\350\257\225\350\277\207\347\250\213.txt"
++@@ -5,7 +5,9 @@ sysbench /root/sysbench/src/lua/oltp_read_write.lua --mysql-host=10.60.0.13 --my
++ sysbench /root/sysbench/src/lua/oltp_read_write.lua --mysql-host=10.60.0.13 --mysql-port=3306 --mysql-db=test --mysql-user=root --mysql-password=root --table_size=10000000 --tables=10 --threads=16 --time=60 --report-interval=10 --db-driver=mysql run
++ 
++ 
+++# git 工具使用
++ $ git remote add origin https://github.com/yuantianwen/pytest.git
++ 
++ Administrator@AN4WFEN0KENJY3J MINGW64 /i/workspace/python/pytest (master)
++ $ git push -u origin master
+++
+\ No newline at end of file
+diff --git a/docs/git.png b/docs/git.png
+new file mode 100644
+index 0000000..6c3e9af
+Binary files /dev/null and b/docs/git.png differ
