@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #coding=utf-8
 import time
-from common import ssh,LOG
+from common import ssh,LOG,_mess_part
 from prettytable import PrettyTable
 
 def install_sysbench(hosts):
@@ -123,3 +123,21 @@ def cpu_metric(fname):
         else:
             LOG('RED','%s content is incomplete or corrupt'%(fname))
             return ""
+'''
+功能：检查sysbench机器运行状态
+'''
+def sysbench_show_status(param):
+    dbhosts = param[0]
+    sbhosts = param[1]
+    #print "ytw",dbhosts ,sbhosts
+    x = PrettyTable(["ip", "sysbench", "sar"])
+    x.align["ip"]="l"
+    for h in sbhosts.values():
+        rssh = ssh(h.ip,user=h.user,passwd=h.passwd)
+        ret = rssh.ssh_run("ps -ef|grep 'sysbench'|grep -v 'grep'|wc -l")
+        x.add_row([h.ip,int(ret.split(_mess_part)[1]),0])
+    for h in dbhosts.values():
+        rssh = ssh(h.ip,user=h.user,passwd=h.passwd)
+        ret = rssh.ssh_run("ps -ef|grep 'sar'|grep -v 'grep'|wc -l")
+        x.add_row([h.ip,0,int(ret.split(_mess_part)[1])])
+    print x
